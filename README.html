@@ -1,18 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta htp-equic="X-UA-Compatible" contents="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>Clicking Heart Button to Go to Next Page</title>
-    <link rel="stylesheet", href="style.css">
+
   </head>
 
   <body>
-    <button id="myButton" class="float-left submit-button" >Home</button>
+    <h1>Happy Valentine's Day!!!</h1>
+    <div>
+      <img src="images/anime_girl_heart.png" alt="Girl in a jacket" style="width:400px;height:400px;">
+    </div>
 
-    <script src="page1.js">
-      document.getElementById("myButton").onclick = function () {
-        location.href = "www.yoursite.com";
-    };
-</script>
+    <div1>
+    <button id="myButton" type="button"> Click me! </button>
+
+    <script>
+      let count = 0;
+      const myButton = document.getElementById("myButton");
+      myButton.addEventListener("click", function(e) {
+        if(count == 0){
+          alert("Phuoc BB, you're here!");
+          myButton.innerText = "Click Again!";
+          count += 1;
+        } else if(count == 1){
+          alert("I luv u!");
+          count += 1;
+        }else if(count == 2){
+          alert("You're the best!");
+          count += 1;
+        } else {
+          alert("Ready?");
+          location.replace("https://jingtingl.github.io/PD/PD.html");
+        }
+      });
+
+    </script>
+    </div1>
   </body>
 </html>
