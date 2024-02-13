@@ -4,11 +4,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Full Screen Scroll Website</title>
     <link rel="stylesheet", href="style.css">
+    <style>
+        /* Added CSS for scrolling */
+        .image-container {
+            overflow-x: scroll; /* Enable horizontal scrolling */
+            overflow-y: hidden; /* Disable vertical scrolling */
+            white-space: nowrap; /* Prevent wrapping */
+            -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+        }
+
+        .image {
+            display: inline-block; /* Ensure inline display */
+        }
+    </style>
 </head>
 <body>
-    <div class=container>
+    <div class="container">
         <div class="text">
-            <h1>Dear Phuoc, </h1>
+            <h1>Dear Phuoc,</h1>
             <p1>Thank you for always being there for me.<br></p1>
             <p2><br>You're always patient with me when I overthink. <br><br> You comfort me when I'm sad or get annoyed. 
                 <br><br>Stop comparing yourself to others ok! You're the best to me!<br></p2>
@@ -21,10 +34,12 @@
                 Jingting Liu
                 </h2>
         </div>
-        <div class="image">
-            <img id="optionalstuff" src="images/happy.png" id="happy_img" style="width:400px;height:400px;">
+        <div class="image-container"> <!-- Added a container for the image -->
+            <div class="image">
+                <img src="images/happy.png" id="happy_img" style="width:400px;height:400px;">
+            </div>
         </div>
     </div>
-
 </body> 
 </html>
+
