@@ -8,27 +8,14 @@ body{
   font-style: italic;
   padding-bottom: 10px;
 }
-
-div image{
-  width: 200px;
-  height: 2000px;
-}
-
 .container {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
-  padding: 20px;
-  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
-
-@media screen and (max-width: 600px) {
-  .image {
-      display: block; /* Display image */
-      text-align: center; /* Center the image horizontally */
-      margin-top: auto; /* Push image to the bottom of the page */
-  }
+div image{
+  width: 100px;
+  height: 100px;
 }
 
 
