@@ -23,10 +23,12 @@ div image{
   box-sizing: border-box;
 }
 
-div image{
-  width: 100px;
-  height: 100px;
-  min-width: 1200;
+@media screen and (max-width: 600px) {
+  .image {
+      display: block; /* Display image */
+      text-align: center; /* Center the image horizontally */
+      margin-top: auto; /* Push image to the bottom of the page */
+  }
 }
 
 

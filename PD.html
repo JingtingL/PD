@@ -3,27 +3,57 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Full Screen Scroll Website</title>
-    <link rel="stylesheet", href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            display: flex; /* Use flexbox */
+            justify-content: center; /* Center the flex items horizontally */
+            align-items: center; /* Center the flex items vertically */
+            flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+        }
+
+        .text {
+            width: 50%; /* Make text take up half of the container width */
+            padding: 20px; /* Add some padding */
+        }
+
+        .image {
+            width: 50%; /* Make image take up half of the container width */
+            padding: 20px; /* Add some padding */
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+
+        .image img {
+            width: 100%; /* Make image fill its container */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove any extra spacing */
+        }
+
+        @media screen and (max-width: 600px) {
+            .text,
+            .image {
+                width: 100%; /* On smaller screens, make both text and image take up full width */
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="text">
             <h1>Dear Phuoc,</h1>
-            <p1>Thank you for always being there for me.<br></p1>
-            <p2><br>You're always patient with me when I overthink. <br><br> You comfort me when I'm sad or get annoyed. 
-                <br><br>Stop comparing yourself to others ok! You're the best to me!<br></p2>
-            <p3><br>I love how we share a lot of moments together already!<br></p3>
-            <p4><br>Let's share even more moments together in the future!<br></p4>
-            <p4><br> Happy Valentine's Day, Phuoc<br></p4>
-            <p5><br> Be My Valentines! <br></p5>
-
-            <h2> Love,
-                Jingting Liu
-                </h2>
+            <p>Thank you for always being there for me.</p>
+            <p>You're always patient with me when I overthink. You comfort me when I'm sad or get annoyed. 
+                Stop comparing yourself to others ok! You're the best to me!</p>
+            <p>I love how we share a lot of moments together already! Let's share even more moments together in the future!</p>
+            <p>Happy Valentine's Day, Phuoc</p>
+            <p>Be My Valentine!</p>
+            <h2>Love, Jingting Liu</h2>
         </div>
         <div class="image">
-            <img src="images/happy.png" id="happy_img" style="width:200px;height:200px;">
+            <img src="images/happy.png" id="happy_img">
         </div>
     </div>
 </body> 
 </html>
+
+
