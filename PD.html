@@ -7,26 +7,20 @@
     <style>
         /* Added CSS for scrolling */
         .container {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Ensure container takes up at least the full viewport height */
-        }
-
-        .text {
-            flex: 1; /* Expand to fill remaining space */
-            padding-bottom: 20px; /* Adjust as needed */
+            overflow-x: scroll; /* Enable horizontal scrolling */
+            overflow-y: hidden; /* Disable vertical scrolling */
+            white-space: nowrap; /* Prevent wrapping */
+            -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
         }
 
         .image {
-            display: none; /* Hide image by default */
+            display: inline-block; /* Ensure inline display */
         }
 
-        /* Added CSS to display image only on mobile */
+        /* Added CSS to hide image on mobile */
         @media screen and (max-width: 600px) {
             .image {
-                display: block; /* Display image */
-                text-align: center; /* Center the image horizontally */
-                margin-top: auto; /* Push image to the bottom of the page */
+                display: none; /* Hide the image container on screens less than 600px wide */
             }
         }
     </style>
@@ -48,11 +42,13 @@
                 </h2>
         </div>
         <div class="image">
-            <img src="images/happy.png" id="happy_img" style="width:200px;height:200px;">
+            <img src="images/happy.png" style="width:400px;height:400px;" alt="Happy Image">
         </div>
     </div>
+
 </body> 
 </html>
+
 
 
 
