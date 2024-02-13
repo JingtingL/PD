@@ -20,6 +20,21 @@ div image{
   height: 100px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.text {
+  margin-bottom: 20px;
+}
+
+
+
 
 
 
