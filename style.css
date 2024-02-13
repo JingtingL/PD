@@ -22,7 +22,7 @@ div image{
 
 @media screen and (max-width : 414px){
   div image{
-    visibility: hidden;
+    display: none;
   }
 }
 
