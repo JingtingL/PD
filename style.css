@@ -20,6 +20,13 @@ div image{
   height: 100px;
 }
 
+@media screen and (max-width : 414px){
+  div image{
+    visibility: hidden;
+  }
+}
+
+
 
 
 
