@@ -22,12 +22,13 @@
                 </h2>
         </div>
         <div class="image" style="">
-            <img src="images/happy.png" style="width:400px;height:400px;">
+            <img src="images/happy.png" id="happy_img" style="width:400px;height:400px;">
         </div>>
         <script>
-            if (window.innerWidth < 601) {
+            const happy_img = getElementById("happy_img")
+            if (window.innerWidth < 600) {
             //Remove HTML elements not to be shown in mobile devices
-                document.getElementById("image").remove();
+                document.getElementById("happy_img").remove();
 
             };
         </script>
