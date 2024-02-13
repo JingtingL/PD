@@ -23,59 +23,13 @@ div image{
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-.container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Ensure container takes up at least the full viewport height */
-}
-
-.text {
-  flex: 1; /* Expand to fill remaining space */
-  padding-bottom: 20px; /* Adjust as needed */
-}
-
-/* Added CSS to display image only on mobile */
-@media screen and (max-width: 600px) {
-  .image {
-      display: block; /* Display image */
-      text-align: center; /* Center the image horizontally */
-      margin-top: auto; /* Push image to the bottom of the page */
-  }
-=======
 div image{
   width: 100px;
   height: 100px;
   min-width: 1200;
 }
 
-.music-button {
-  display: block;
-  width: 100px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  background-color: #007bff;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 20px auto;
-  text-decoration: none;
-}
-.video-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  margin-bottom: 20px;
-}
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
->>>>>>> parent of 95bf70e (Fix image and button)
-}
+
 
 
 
