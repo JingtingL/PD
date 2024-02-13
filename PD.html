@@ -21,9 +21,16 @@
                 Jingting Liu
                 </h2>
         </div>
-        <div class="image" style="overflow:unset;">
+        <div class="image" style="">
             <img src="images/happy.png" style="width:400px;height:400px;">
         </div>>
+        <script>
+            if (window.innerWidth < 601) {
+            //Remove HTML elements not to be shown in mobile devices
+                document.getElementById("image").remove();
+
+            };
+        </script>
     </div>
 
 </body> 
