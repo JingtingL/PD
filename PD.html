@@ -16,6 +16,13 @@
         .image {
             display: inline-block; /* Ensure inline display */
         }
+
+        /* Added CSS to hide image on mobile */
+        @media screen and (max-width: 600px) {
+            .image-container {
+                display: none; /* Hide the image container on screens less than 600px wide */
+            }
+        }
     </style>
 </head>
 <body>
@@ -42,4 +49,5 @@
     </div>
 </body> 
 </html>
+
 
