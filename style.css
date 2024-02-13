@@ -9,15 +9,9 @@ body{
   padding-bottom: 10px;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 div image{
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 2000px;
 }
 
 .container {
@@ -29,10 +23,25 @@ div image{
   box-sizing: border-box;
 }
 
-.text {
-  margin-bottom: 20px;
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure container takes up at least the full viewport height */
 }
 
+.text {
+  flex: 1; /* Expand to fill remaining space */
+  padding-bottom: 20px; /* Adjust as needed */
+}
+
+/* Added CSS to display image only on mobile */
+@media screen and (max-width: 600px) {
+  .image {
+      display: block; /* Display image */
+      text-align: center; /* Center the image horizontally */
+      margin-top: auto; /* Push image to the bottom of the page */
+  }
+}
 
 
 
