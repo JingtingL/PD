@@ -6,21 +6,27 @@
     <link rel="stylesheet", href="style.css">
     <style>
         /* Added CSS for scrolling */
-        .image-container {
-            overflow-x: scroll; /* Enable horizontal scrolling */
-            overflow-y: hidden; /* Disable vertical scrolling */
-            white-space: nowrap; /* Prevent wrapping */
-            -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure container takes up at least the full viewport height */
+        }
+
+        .text {
+            flex: 1; /* Expand to fill remaining space */
+            padding-bottom: 20px; /* Adjust as needed */
         }
 
         .image {
-            display: inline-block; /* Ensure inline display */
+            display: none; /* Hide image by default */
         }
 
-        /* Added CSS to hide image on mobile */
+        /* Added CSS to display image only on mobile */
         @media screen and (max-width: 600px) {
-            .image-container {
-                display: none; /* Hide the image container on screens less than 600px wide */
+            .image {
+                display: block; /* Display image */
+                text-align: center; /* Center the image horizontally */
+                margin-top: auto; /* Push image to the bottom of the page */
             }
         }
     </style>
@@ -41,14 +47,13 @@
                 Jingting Liu
                 </h2>
         </div>
-        <div class="image-container"> <!-- Added a container for the image -->
-            <div class="image">
-                <img src="images/happy.png" id="happy_img" style="width:400px;height:400px;">
-            </div>
+        <div class="image">
+            <img src="images/happy.png" id="happy_img" style="width:200px;height:200px;">
         </div>
     </div>
 </body> 
 </html>
+
 
 
 
