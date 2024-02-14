@@ -25,6 +25,10 @@ button{
   color: black;
   padding: 20px;
   margin: 10;
+  text-align: right;
+}
+
+.button-container {
   text-align: center;
 }
 
