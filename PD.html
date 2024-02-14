@@ -25,15 +25,18 @@
             <div class="image">
                 <img src="images/happy.png" id="happy_img" style="width:400px;height:400px;">
             </div>
-            <button onclick="goBack()">Go Back</button>
+            <div class="button-container">
+                <button onclick="goBack()">Go Back</button>
+            </div>
         </div>
     </div>
 
     <script>
         function goBack() {
-            location.replace("https://jingtingl.github.io/PD/README.html")      
+            window.history.back();
         }
     </script>
 </body> 
 </html>
+
 
